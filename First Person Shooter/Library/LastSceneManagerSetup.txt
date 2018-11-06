@@ -1,0 +1,7 @@
+sceneSetups:
+- path: Assets/scifi.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/Extreme Sci-Fi LITE/Demo_Scenes/Display_1.unity
+  isLoaded: 0
+  isActive: 0
