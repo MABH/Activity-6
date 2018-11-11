@@ -10,7 +10,9 @@ public class AutomaticDoor : MonoBehaviour {
     public Transform leftOpenLocation;
     public Transform rightOpenLocation;
     public AudioSource audio;
-    public float speed = 1.0f;
+    //public float speed = 1.0f;
+    public float speed = 0.25f;
+    public float colDistance = 0.5f;
 
     bool isOpening = false;
     bool isClosing = false;
@@ -22,7 +24,7 @@ public class AutomaticDoor : MonoBehaviour {
         if (isOpening)
         {            
             distance = leftDoor.localPosition - leftOpenLocation.localPosition;
-            if (distance.magnitude < 0.5f)
+            if (distance.magnitude < colDistance)
             {
                 isOpening = false;
                 leftDoor.localPosition = leftOpenLocation.localPosition;
@@ -41,8 +43,9 @@ public class AutomaticDoor : MonoBehaviour {
         else if (isClosing)
         {
             distance = leftDoor.localPosition - leftClosedLocation.localPosition;
-            if(distance.magnitude < 0.5f)
+            if(distance.magnitude < colDistance)
             {
+                //Debug.Log("Is closing distance: "+ distance.magnitude);
                 isClosing = false;
                 leftDoor.localPosition = leftClosedLocation.localPosition;
                 rightDoor.localPosition = rightClosedLocation.localPosition;
@@ -61,6 +64,7 @@ public class AutomaticDoor : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
     {
+        //Debug.Log("OnTriggerEnter: " + distance.magnitude);
         isOpening = true;
         isClosing = false;
         audio.Play();
