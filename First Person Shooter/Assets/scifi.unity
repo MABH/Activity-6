@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2eeba5a34e2f1440797d2b0056f3356c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.5224648, g: 0.57024986, b: 0.5377016, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2436,6 +2436,71 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4abc7df6daac89498360bb42c3d3652, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &644157849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 644157851}
+  - component: {fileID: 644157850}
+  m_Layer: 0
+  m_Name: Water4AdvancedReflectionFirstPersonCharacter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &644157850
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644157849}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967279
+  m_RenderingPath: 1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &644157851
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644157849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 247.86781, y: -1.92, z: 195.31348}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647351068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,6 +2688,7 @@ MonoBehaviour:
   crosshair: {fileID: 1834094764}
   player: {fileID: 659893059}
   congratulations: {fileID: 146406850}
+  camara: {fileID: 847700643}
   mensaje: {fileID: 1024806739}
   fireSound: {fileID: 1852441295}
   fireSoundEnemy: {fileID: 537867457}
@@ -2790,6 +2856,7 @@ MonoBehaviour:
   crosshair: {fileID: 1834094764}
   text: {fileID: 146406850}
   player: {fileID: 0}
+  camara: {fileID: 0}
 --- !u!1 &739571901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,6 +2903,7 @@ MonoBehaviour:
   crosshair: {fileID: 1834094764}
   text: {fileID: 146406850}
   player: {fileID: 0}
+  camara: {fileID: 0}
 --- !u!65 &746163384
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3082,8 +3150,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832743184}
-  m_LocalRotation: {x: 0.0013180673, y: -0.47713974, z: 0.0007156176, w: 0.87882614}
-  m_LocalPosition: {x: 53.975296, y: -3.9136848, z: 9.327225}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8578186, y: -4.3776, z: -12.426529}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 647351069}
@@ -3152,7 +3220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &847700644
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5402,9 +5470,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b34f16edea3de3a489f4fba02b56261b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a142c1147cfa17140bcb8912e5cf56e2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.51
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5582,21 +5650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crosshair: {fileID: 1834094764}
   text: {fileID: 146406850}
-  player: {fileID: 0}
---- !u!114 &1304281426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1304281424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe818b1a8c1bb34e8db8a7f3abeb5f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crosshair: {fileID: 1834094764}
-  text: {fileID: 146406850}
   player: {fileID: 659893059}
+  camara: {fileID: 847700643}
 --- !u!65 &1304281427
 BoxCollider:
   m_ObjectHideFlags: 0

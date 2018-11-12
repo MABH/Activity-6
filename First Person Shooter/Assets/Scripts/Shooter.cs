@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class shooter : MonoBehaviour {
     public GameObject decalPrefab;
-    public GameObject crosshair, player,congratulations;
+    public GameObject crosshair, player,congratulations, camara;
     public Text mensaje;
     GameObject[] totalDecals;
     int actual_decal = 0;
@@ -103,7 +103,7 @@ public class shooter : MonoBehaviour {
         if (playerLife<=0)
         {
             crosshair.SetActive(false);
-           
+            camara.SetActive(true);
             mensaje.text = "You have died¡¡¡";
             congratulations.SetActive(true);
             player.SetActive(false);
